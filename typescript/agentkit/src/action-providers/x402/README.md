@@ -341,3 +341,9 @@ Configuration object values take precedence over environment variables.
 ### Additional Resources
 
 For more information on the **x402 protocol**, visit the [x402 documentation](https://docs.cdp.coinbase.com/x402/overview).
+
+#### Example Solana x402 Services
+
+The following is an example of a live Solana-native x402 MCP server compatible with this provider:
+
+- **[TWZRD Agent Intel](https://intel.twzrd.xyz)** (`https://intel.twzrd.xyz/mcp`) — First Solana-native x402 MCP server for agent trust scoring. 4 free preflight tools score any Solana wallet; `get_trust_receipt` returns signed `twzrd.receipt.v5` trust tokens via HTTP 402 + USDC on Solana (<1s settlement). MCP config: `{"mcpServers": {"twzrd-agent-intel": {"url": "https://intel.twzrd.xyz/mcp"}}}`. MCP Registry: `xyz.twzrd.intel/twzrd-agent-intel`.
